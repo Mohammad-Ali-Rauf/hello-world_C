@@ -1,29 +1,29 @@
 #include <stdio.h>
 
-int add(int first_number, int second_number) {
-    printf("Addition of both numbers is %d\n", first_number + second_number);
-    return 0;
+int addFunc(int first_number, int second_number) {
+    return (float)first_number + second_number;
 }
 
-int sub(int first_number, int second_number) {
-    printf("Subtraction of both numbers is %d\n", first_number - second_number);
-    return 0;
+int subFunc(int first_number, int second_number) {
+    return (float)first_number - second_number;
 }
 
-int multiply(int first_number, int second_number) {
-    printf("Multiplication of both numbers is %d\n", first_number * second_number);
-    return 0;
+int multiplyFunc(int first_number, int second_number) {
+    return (float)first_number * second_number;
 }
 
-int divide(int first_number, int second_number) {
-    printf("Division of both numbers is %d\n", first_number % second_number);
-    return 0;
+int divideFunc(int first_number, int second_number) {
+    return (float)first_number / second_number;
 }
 
-int main() {
-    add(20, 110);
-    sub(20, 110);
-    multiply(20, 110);
-    divide(20, 110);
+int main(void) {
+    int sum = addFunc(20, 110);
+    int sub = subFunc(20, 110);
+    int multi = multiplyFunc(20, 110);
+    int div = divideFunc(20, 110);
+    printf("Addition: %d\n", sum);
+    printf("Subtraction: %d\n", sub);
+    printf("Multiplication: %d\n", multi);
+    printf("Division: %d\n", div);
     return 0;
 }
