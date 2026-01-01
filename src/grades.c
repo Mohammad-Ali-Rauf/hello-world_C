@@ -2,16 +2,12 @@
 
 int main(void)
 {
-    int grades[5];
-    grades[0] = 81;
-    grades[1] = 80;
-    grades[2] = 85;
-    grades[3] = 96;
-    grades[4] = 92;
+    int grades[5] = {82, 85, 89, 92, 96};
+    int n = sizeof(grades) / sizeof(grades[0]);
     int total = grades[0] + grades[1] + grades[2] + grades[3] + grades[4];
-    float avg = (float)total / 5;
+    float avg = (float)total / n;
     int highestGrade = grades[0];
-    for (int i = 1; i < 5; i++)
+    for (int i = 1; i < n; i++)
     {
         if (grades[i] > highestGrade)
         {
