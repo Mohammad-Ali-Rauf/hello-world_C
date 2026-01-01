@@ -20,7 +20,7 @@ int main(void) {
     int sum = addFunc(20, 110);
     int sub = subFunc(20, 110);
     int multi = multiplyFunc(20, 110);
-    float div = divideFunc(30.3, 110.25);
+    float div = divideFunc(100, 1000);
     printf("Addition: %d\n", sum);
     printf("Subtraction: %d\n", sub);
     printf("Multiplication: %d\n", multi);
